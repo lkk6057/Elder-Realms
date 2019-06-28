@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class ZoneScript : MonoBehaviour {
-    string[] Zones = {"","","","Oakdale","Oakdale Gates","Your house","Easter Egg","Snake Mire","Sky Garden"};
+    string[] Zones = {"","","","Oakdale","Oakdale Gates","Your house","Easter Egg","Snake Mire","Sky Garden","Shop","Floral Sanctum","Plains","Tutorial","Tutorial 2"};
     public GameObject Text;
 	// Use this for initialization
 	void Start () {

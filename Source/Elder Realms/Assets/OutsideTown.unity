@@ -236,6 +236,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1077739180764356, guid: caf13091531e07841935c9bb7cfdb53c,
         type: 2}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMin
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMax
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c75e9a120ff26940822d26fac325938, type: 2}
   m_IsPrefabParent: 0
@@ -669,8 +679,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 7, y: -4, z: 0}
     second:
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -678,8 +688,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 8, y: -4, z: 0}
     second:
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -687,14 +697,14 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 20
+  - m_RefCount: 18
     m_Data: {fileID: 11400000, guid: b90fabd660e54004e9dc1d601f86abc8, type: 2}
-  - m_RefCount: 16
+  - m_RefCount: 18
     m_Data: {fileID: 11400000, guid: 8a1f204895926d442b17b4f1c5c37f05, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 20
+  - m_RefCount: 18
     m_Data: {fileID: 21300000, guid: e43bcc4aabca0154d9a0a9e24972639e, type: 3}
-  - m_RefCount: 16
+  - m_RefCount: 18
     m_Data: {fileID: 21300000, guid: b2917ca332edddd49b5827904987d6d3, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 36
@@ -887,7 +897,7 @@ Prefab:
     - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
         type: 2}
       propertyPath: Tpscene
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
         type: 2}
@@ -1017,6 +1027,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1077739180764356, guid: caf13091531e07841935c9bb7cfdb53c,
         type: 2}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMin
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMax
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c75e9a120ff26940822d26fac325938, type: 2}
   m_IsPrefabParent: 0
@@ -1213,6 +1233,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1077739180764356, guid: caf13091531e07841935c9bb7cfdb53c,
         type: 2}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMin
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMax
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c75e9a120ff26940822d26fac325938, type: 2}
   m_IsPrefabParent: 0
@@ -1433,6 +1463,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1077739180764356, guid: caf13091531e07841935c9bb7cfdb53c,
         type: 2}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMin
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114538566831459808, guid: 8c75e9a120ff26940822d26fac325938,
+        type: 2}
+      propertyPath: CooldownMax
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c75e9a120ff26940822d26fac325938, type: 2}
   m_IsPrefabParent: 0

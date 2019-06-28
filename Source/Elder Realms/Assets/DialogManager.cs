@@ -8,13 +8,15 @@ public class DialogManager : MonoBehaviour {
     public bool GoNext;
     public bool InDialog;
     public bool InTrade;
+    public bool InShop;
     public bool Writing;
     public Text DialogText;
     public string currdialog;
     public string[] currdialogs;
-    public int DialogType; // 0 sell 1 buy 2 small talk
+    public int DialogType; // 0 sell 1 buy 2 small talk 3 quest;
     public GameObject sender;
     public SellUiScript SellUi;
+    public BuyUiScript BuyUi;
     public InventoryUiScript InventoryUi;
 	// Use this for initialization
 	void Start () {
@@ -27,6 +29,10 @@ public class DialogManager : MonoBehaviour {
         if (SellUi==null&&GameObject.FindGameObjectWithTag("SellUi")!=null)
         {
             SellUi = GameObject.FindGameObjectWithTag("SellUi").GetComponent<SellUiScript>();
+        }
+        if (BuyUi == null && GameObject.FindGameObjectWithTag("BuyUi") != null)
+        {
+            BuyUi = GameObject.FindGameObjectWithTag("BuyUi").GetComponent<BuyUiScript>();
         }
         if (DialogUi.GetComponent<Canvas>().enabled)
         {
@@ -102,6 +108,14 @@ public class DialogManager : MonoBehaviour {
             SellUi.gameObject.GetComponent<Canvas>().enabled = true;
             InventoryUi.CloseInventory();
             SellUi.RefreshSellInventory();
+            InventoryUi.gameObject.GetComponent<Canvas>().enabled = false;
+        }
+        if (DialogType == 1)
+        {
+            InShop = true;
+            BuyUi.gameObject.GetComponent<Canvas>().enabled = true;
+            InventoryUi.CloseInventory();
+            BuyUi.RefreshBuyInventory();
             InventoryUi.gameObject.GetComponent<Canvas>().enabled = false;
         }
         DialogUi.GetComponent<Canvas>().enabled = false;

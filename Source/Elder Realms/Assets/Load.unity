@@ -113,6 +113,62 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7276063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 7276065}
+  - component: {fileID: 7276064}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: SaveManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7276064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7276063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba4f5893d9256345b29cd48c1b17b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  save:
+    inventory: []
+    skills: []
+    Gold: 0
+    MaxHealth: 0
+    MaxMana: 0
+    Level: 0
+    Exp: 0
+    SkillPoints: 0
+    Scene: 0
+    TutorialDone: 0
+    PlayerX: 0
+    PlayerY: 0
+  hero: {fileID: 0}
+  skillui: {fileID: 0}
+  loader: {fileID: 1403434107}
+--- !u!4 &7276065
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7276063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190642061
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,12 +399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf436eee18ac4694d9506dc30e269961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: 5069bcaf1a3a63740a9fec4e9b241907, type: 3}
-  village: {fileID: 8300000, guid: 71623e0741b74f34e9393208a26d0330, type: 3}
+  music: {fileID: 8300000, guid: 3440228d26dfc2441bb2c02019b96385, type: 3}
+  village: {fileID: 8300000, guid: 89e8b3b4f51ade240b866dbe93901fc3, type: 3}
   source: {fileID: 334581498}
   Loader: {fileID: 1403434106}
   menu: 1
   game: 1
+  villageon: 0
 --- !u!4 &334581500
 Transform:
   m_ObjectHideFlags: 0
@@ -471,7 +528,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Audio: {fileID: 334581497}
+  Music: {fileID: 0}
   ZoneSwitcher: {fileID: 190642061}
+  currscene: 0
+  musics:
+  - {fileID: 8300000, guid: bebf8a9040afbb3478aa1d8c8ece558b, type: 3}
+  - {fileID: 8300000, guid: ffdd2bc6aa56fe14cad47fbd81765df7, type: 3}
+  savemanager: {fileID: 7276064}
 --- !u!4 &1403434108
 Transform:
   m_ObjectHideFlags: 0
@@ -587,9 +650,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6e95c81cf6cc5144a44364a0fb363c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  registereditems: []
   sprites:
   - {fileID: 21300000, guid: cdbb4b530048a7249a972957fbbfbed6, type: 3}
   - {fileID: 21300000, guid: dd7eb789a4889fe4abbcf2f10cccd6ca, type: 3}
+  - {fileID: 21300000, guid: 7685daa6f8a30014bac97c734a5bec21, type: 3}
+  - {fileID: 21300000, guid: 017cfef8dc608ee4c847f1e0a74cef12, type: 3}
+  - {fileID: 21300000, guid: c7707e8fc74c83e42bab6236518d9b41, type: 3}
+  - {fileID: 21300000, guid: 3dd6954e581f10a4380fa156e7bd197a, type: 3}
+  - {fileID: 21300000, guid: 6689aa283967add468a4f907a8ce0026, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -601,6 +670,23 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  registeredentities:
+  - {fileID: 1962528299620808, guid: 6384d9442aec3214796dbc12c0c8e22e, type: 2}
+  - {fileID: 1077739180764356, guid: caf13091531e07841935c9bb7cfdb53c, type: 2}
+  - {fileID: 1026946274231160, guid: c87067c87c2135d46ae20107a52f0654, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  entities:
+  - {fileID: 1962528299620808, guid: 6384d9442aec3214796dbc12c0c8e22e, type: 2}
+  - {fileID: 1077739180764356, guid: caf13091531e07841935c9bb7cfdb53c, type: 2}
+  - {fileID: 1026946274231160, guid: c87067c87c2135d46ae20107a52f0654, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

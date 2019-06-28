@@ -19,6 +19,11 @@ public class SlimeScript : MonoBehaviour {
         {
             transform.localScale = new Vector3(-transform.localScale.x, 1, 1);
         }
+        if (GameObject.FindGameObjectWithTag("EliteSpawner")!=null) {
+            if (GameObject.FindGameObjectWithTag("EliteSpawner").GetComponent<SpawnerScript>().EntityAssigned!=null) {
+                Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("EliteSpawner").GetComponent<SpawnerScript>().EntityAssigned.GetComponent<Collider2D>());
+            }
+        }
     }
 	
 	// Update is called once per frame

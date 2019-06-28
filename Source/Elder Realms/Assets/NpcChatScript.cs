@@ -8,6 +8,7 @@ public class NpcChatScript : MonoBehaviour {
     public string[] dialogs;
     public string[] randomdialogs;
     public int dialogmode; //0 dialogue path 1 random from list
+    public bool quest;
     // Use this for initialization
     void Start()
     {

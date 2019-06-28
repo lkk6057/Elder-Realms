@@ -929,6 +929,77 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1571545554
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270889087886830, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
+        type: 2}
+      propertyPath: Tploc.y
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
+        type: 2}
+      propertyPath: Tploc.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
+        type: 2}
+      propertyPath: Offset.y
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
+        type: 2}
+      propertyPath: Tpscene
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004472494489290, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+      propertyPath: m_Name
+      value: Portal 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487451492229096, guid: f6e79cce869785e44ac8f29c01b0c3ab,
+        type: 2}
+      propertyPath: Offset.x
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f6e79cce869785e44ac8f29c01b0c3ab, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1573014914
 Prefab:
   m_ObjectHideFlags: 0

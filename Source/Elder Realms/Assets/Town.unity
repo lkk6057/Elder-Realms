@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256985854}
   - component: {fileID: 256985853}
+  - component: {fileID: 256985855}
   m_Layer: 0
   m_Name: House 2
   m_TagString: Untagged
@@ -261,6 +262,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256985855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 256985852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63201b12436daad419cf94ea77065111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hero: {fileID: 0}
+  Tploc: {x: -6, y: -2.36, z: 0}
+  Offset: {x: 1, y: -2.36, z: 0}
+  Tpscene: 9
 --- !u!1001 &524083624
 Prefab:
   m_ObjectHideFlags: 0
@@ -628,6 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hero: {fileID: 0}
+  dialogmanager: {fileID: 0}
 --- !u!1 &1190899924
 GameObject:
   m_ObjectHideFlags: 0

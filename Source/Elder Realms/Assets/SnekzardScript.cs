@@ -12,6 +12,8 @@ public class SnekzardScript : MonoBehaviour {
     public bool TurnCool = false;
     public GameObject Tongue;
     public Sprite[] sprites;
+    public AudioClip death;
+    public AudioSource audiosource;
 	// Use this for initialization
 	void Start () {
         Tongue.GetComponent<BoxCollider2D>().enabled = false;
@@ -42,7 +44,7 @@ public class SnekzardScript : MonoBehaviour {
 
             if (State == 1 && !Attacking)
             {
-                if (Vector3.Distance(transform.position, Hero.transform.position) < 1f && !AttackCool)
+                if (Vector3.Distance(transform.position, Hero.transform.position) < 0.9f && !AttackCool)
                 {
                     StartCoroutine(Attack());
                 }
@@ -124,6 +126,7 @@ public class SnekzardScript : MonoBehaviour {
     }
     public void Die()
     {
+        source.GetComponent<AudioSource>().PlayOneShot(death);
         Destroy(gameObject);
     }
 }

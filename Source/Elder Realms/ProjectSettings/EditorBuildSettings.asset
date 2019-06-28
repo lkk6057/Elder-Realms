@@ -32,4 +32,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SkyGarden.unity
     guid: 5379c1f7149ec104b9e081b11bed94ef
+  - enabled: 1
+    path: Assets/Shop.unity
+    guid: e6c67e6a735484e4f9504035f55c77a7
+  - enabled: 1
+    path: Assets/FloralSanctum.unity
+    guid: af94af9b55b60884db6aa1fd87d7d316
+  - enabled: 1
+    path: Assets/Plains.unity
+    guid: 8017f99d5c2059646853528b4d654b5b
+  - enabled: 1
+    path: Assets/Tutorial.unity
+    guid: 72f4182c141d6364dafdc6b6620c9a97
+  - enabled: 1
+    path: Assets/Tutorial2.unity
+    guid: 324584c9f03bd934ab7cb3c6c72bc4d3
   m_configObjects: {}

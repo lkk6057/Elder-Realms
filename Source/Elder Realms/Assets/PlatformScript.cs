@@ -18,10 +18,32 @@ public class PlatformScript : MonoBehaviour {
             {
                 Physics2D.IgnoreCollision(Hero.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
             }
+            else
+            {
+                Physics2D.IgnoreCollision(Hero.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            }
         }
         else
         {
             Physics2D.IgnoreCollision(Hero.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
-	}
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("Ground").Length; i++)
+        {
+            if (GameObject.FindGameObjectsWithTag("Ground")[i].GetComponent<EliteSlimeScript>() != null)
+            {
+                if (GameObject.FindGameObjectsWithTag("Ground")[i].transform.position.y<center.transform.position.y)
+                {
+                    Physics2D.IgnoreCollision(GameObject.FindGameObjectsWithTag("Ground")[i].GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                }
+                else
+                {
+                    Physics2D.IgnoreCollision(GameObject.FindGameObjectsWithTag("Ground")[i].GetComponent<Collider2D>(), GetComponent<Collider2D>(),false);
+                }
+                if (GameObject.FindGameObjectsWithTag("Ground")[i].transform.position.y>Hero.transform.position.y&& GameObject.FindGameObjectsWithTag("Ground")[i].GetComponent<EliteSlimeScript>().frenzy)
+                {
+                    Physics2D.IgnoreCollision(GameObject.FindGameObjectsWithTag("Ground")[i].GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                }
+            }
+        }
+    }
 }
